@@ -11,22 +11,19 @@
 #define CLICKABLE_BLOCKS 1
 
 // Control whether a leading delimiter should be prepended to the status.
-#define LEADING_DELIMITER 0
+#define LEADING_DELIMITER 1
 
 // Control whether a trailing delimiter should be appended to the status.
-#define TRAILING_DELIMITER 0
+#define TRAILING_DELIMITER 1
 
 // Define blocks for the status feed as X(cmd, interval, signal).
 #define BLOCKS(X)         \
-    X("sb-mail", 600, 1)  \
-    X("sb-music", 0, 2)   \
-    X("sb-disk", 1800, 3) \
-    X("sb-memory", 10, 4) \
-    X("sb-loadavg", 5, 5) \
-    X("sb-mic", 0, 6)     \
-    X("sb-record", 0, 7)  \
-    X("sb-volume", 0, 8)  \
-    X("sb-battery", 5, 9) \
-    X("sb-date", 1, 10)
+    X(". $HOME/.local/bin/status-bar/spotify.sh", 5,  1) \
+    X(". $HOME/.local/bin/status-bar/volume.sh",  5,  2) \
+    X(". $HOME/.local/bin/status-bar/battery.sh", 15, 3) \
+    X(". $HOME/.local/bin/status-bar/date.sh",    1,  4) \
+    X(". $HOME/.local/bin/status-bar/time.sh",    1,  5)
 
 #endif  // CONFIG_H
+
+/* vim:set ts=4 sts=4 sw=4: */
