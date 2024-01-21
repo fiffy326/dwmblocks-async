@@ -25,5 +25,3 @@
     X(". $HOME/.local/bin/status-bar/time.sh",    1,  5)
 
 #endif  // CONFIG_H
-
-/* vim:set ts=4 sts=4 sw=4: */
