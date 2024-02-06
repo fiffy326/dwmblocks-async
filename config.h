@@ -18,10 +18,10 @@
 
 // Define blocks for the status feed as X(cmd, interval, signal).
 #define BLOCKS(X)         \
-    X(". $HOME/.local/bin/status-bar/spotify.sh", 5,  1) \
-    X(". $HOME/.local/bin/status-bar/volume.sh",  5,  2) \
-    X(". $HOME/.local/bin/status-bar/battery.sh", 15, 3) \
-    X(". $HOME/.local/bin/status-bar/date.sh",    1,  4) \
-    X(". $HOME/.local/bin/status-bar/time.sh",    1,  5)
+    X(". $HOME/.local/bin/status-bar/music-player.sh", 5,  1) \
+    X(". $HOME/.local/bin/status-bar/volume.sh",       5,  2) \
+    X(". $HOME/.local/bin/status-bar/battery.sh",      15, 3) \
+    X(". $HOME/.local/bin/status-bar/date.sh",         1,  4) \
+    X(". $HOME/.local/bin/status-bar/time.sh",         1,  5)
 
 #endif  // CONFIG_H
